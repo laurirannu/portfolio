@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Items from './Portfolio Items/Items';
+import ZoomExample from './About/About';
 import './App.css';
-import ComponentWrapper from './Header/Header';
+import Header from './Header/Header';
 
 class App extends Component {
   state = {
@@ -24,15 +25,24 @@ class App extends Component {
       {
         src: require("./Pics/f.jpeg"), className: "portfolio-item wide"
       }
-    ]
+    ], 
+    picturePage: true,
+    lorem: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada tellus ac mi volutpat, ut condimentum dui lobortis. Praesent cursus, mauris nec aliquet tristique, nulla urna sodales eros, nec sodales nulla ipsum id ante. Donec id elit posuere, sollicitudin nunc non, placerat lacus. Maecenas ac placerat erat. Nulla tristique erat neque, id placerat purus accumsan eu. In mi enim, tristique nec dignissim sed, molestie eget urna. Phasellus commodo nisi et mauris molestie tempus. Sed pulvinar mi in sapien laoreet, vitae commodo mi porta. Aliquam bibendum, orci eu viverra commodo, neque ligula efficitur erat, sit amet porttitor libero orci at ipsum. Morbi urna orci, congue ut elementum id, venenatis sed mauris. Nulla consectetur consectetur molestie. Donec semper ac ante ut tincidunt"
+  }
+
+  handleSlider = () => {
+    this.setState({picturePage: !this.state.picturePage})
   }
 
   render() {
     return (
       <div className="App">
         <div className="main-content">
-          <ComponentWrapper />
-          <Items items={this.state.pics}/>
+          <Header onToggle={this.handleSlider}/>
+          {this.state.picturePage ? 
+          <Items items={this.state.pics}/> :
+          <ZoomExample lorem={this.state.lorem}/>  
+        }
         </div>
       </div>
     );

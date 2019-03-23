@@ -17,13 +17,17 @@
   
   .component-wrapper {
     width: 100%;
-    height: 3rem;
+    height: 2rem;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     background-color: #000411;
-    transition: background-color 200ms ease-out;
     margin: 0;
+    justify-content: space-between;
+    justify-content: center;
+    position: fixed;    
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
   }
   
   .header {
@@ -40,6 +44,7 @@
     transition: background-color 100ms ease-out;
     z-index: 1;
     background-color: grey;
+    margin: 1rem;
   }
   .switch:before, .switch:after {
     content: "";

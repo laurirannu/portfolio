@@ -1,25 +1,25 @@
 import React from 'react';
 import './Header.scss';
 
-class ComponentWrapper extends React.Component {
+class Header extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {isOn: false};
 	}
 	
 	handleToggle(e) {
-		this.setState({isOn: !this.state.isOn});
+        this.setState({isOn: !this.state.isOn});
 	}
 	
 	render() {
 		return (
 			<div className="component-wrapper">
-                <p>AAAAAAA</p>
+                <p>Portfolio</p>
 				<Switch 
 					isOn={this.state.isOn}	
 					handleToggle={this.handleToggle.bind(this)}
 				/>
-                <p>BBBBBBB</p>
+                <p>About</p>
 			</div>		
 		);
 	}
@@ -41,4 +41,4 @@ const ToggleButton = function(props) {
 		return (<div className={classNames}></div>);
 };
 
-export default ComponentWrapper;
+export default Header;
