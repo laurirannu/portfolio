@@ -5,10 +5,12 @@ class Header extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {isOn: false};
+		this.onToggle = this.props.onToggle;
 	}
 	
 	handleToggle(e) {
-        this.setState({isOn: !this.state.isOn});
+		this.setState({isOn: !this.state.isOn});
+		this.onToggle();
 	}
 	
 	render() {
@@ -30,7 +32,7 @@ const Switch = function(props) {
 	return (
 		<div className={classNames} onClick={props.handleToggle}>
 			<ToggleButton 
-				isOn={props.isOn}	
+				isOn={props.isOn}
 			/>
 		</div>
 	);

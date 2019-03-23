@@ -1,4 +1,5 @@
 import React from 'react';
+import Zoom from 'react-reveal/Zoom';
 import './Items.css';
 
 class Items extends React.Component {
@@ -15,9 +16,11 @@ class Items extends React.Component {
     render() {
         const { items } = this.props;
         return (
-            <ul className="portfolio">
-                {items.map((item, key) => this.renderItems(item, key))}
-            </ul>
+            <Zoom>
+                <ul className="portfolio">
+                    {items.map((item, key) => this.renderItems(item, key))}
+                </ul>
+            </Zoom>
         );
     }
 }

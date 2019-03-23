@@ -1,16 +1,16 @@
-// You can live edit this code below the import statements
 import React from 'react';
 import Zoom from 'react-reveal/Zoom';
 import Rotate from 'react-reveal/Rotate';
+import './About.css';
 
 const ZoomExample = (props) => {
     return (
-        <div>
-            <Rotate>
-                <h1>About Us</h1>
+        <div className="content-wrapper">
+            <Rotate >
+                <h1 className="title">About Us</h1>
             </Rotate>
             <Zoom >
-                <p>
+                <p className="content">
                     {props.lorem}
                 </p>
             </Zoom>
