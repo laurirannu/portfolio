@@ -2,15 +2,13 @@
     display: block;
     position: relative;
     text-align: center;
-    width: 97rem;
 }
 
 .content {
     display: inline-block;
     max-width: 1000px;
-    margin-top: 4rem;
 }
 
 .title {
-    margin-top: 5rem;
+
 }
