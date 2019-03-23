@@ -1,9 +1,9 @@
 .content-wrapper {
     display: grid;
     height: 100%;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 50px);
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 30px;
+    grid-gap: 0.8rem;
     padding: 2% 5% 5% 5%;
     text-align: center;
 }
@@ -16,4 +16,5 @@
 .title {
     grid-row: 1;
     grid-column: 4 / 3;
+    font-size: 150%;
 }
