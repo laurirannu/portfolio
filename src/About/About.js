@@ -4,6 +4,7 @@ import Rotate from 'react-reveal/Rotate';
 import './About.css';
 
 const ZoomExample = (props) => {
+
     return (
         <div className="content-wrapper">
             <Rotate >

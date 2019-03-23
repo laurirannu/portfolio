@@ -30,6 +30,10 @@ class App extends Component {
     lorem: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada tellus ac mi volutpat, ut condimentum dui lobortis. Praesent cursus, mauris nec aliquet tristique, nulla urna sodales eros, nec sodales nulla ipsum id ante. Donec id elit posuere, sollicitudin nunc non, placerat lacus. Maecenas ac placerat erat. Nulla tristique erat neque, id placerat purus accumsan eu. In mi enim, tristique nec dignissim sed, molestie eget urna. Phasellus commodo nisi et mauris molestie tempus. Sed pulvinar mi in sapien laoreet, vitae commodo mi porta. Aliquam bibendum, orci eu viverra commodo, neque ligula efficitur erat, sit amet porttitor libero orci at ipsum. Morbi urna orci, congue ut elementum id, venenatis sed mauris. Nulla consectetur consectetur molestie. Donec semper ac ante ut tincidunt"
   }
 
+  componentDidUpdate() {
+      window.scrollTo(0, 0);
+  }
+
   handleSlider = () => {
     this.setState({picturePage: !this.state.picturePage})
   }

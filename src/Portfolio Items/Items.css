@@ -8,6 +8,7 @@ body {
 .main-content {
     min-height: 100vh;
     margin-top: 3rem;
+    width: 100%;
 }
 
 .portfolio {
