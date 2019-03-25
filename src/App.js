@@ -8,22 +8,22 @@ class App extends Component {
   state = {
     pics: [
       {
-        src: require("./Pics/a.jpg"), className: "portfolio-item medium"
+        src: require("./Pics/flowers.jpg"), className: "portfolio-item medium"
       },
       {
-        src: require("./Pics/b.jpg"), className: "portfolio-item large"
+        src: require("./Pics/line.jpeg"), className: "portfolio-item large"
       },
       {
-        src: require("./Pics/c.jpeg"), className: "portfolio-item medium"
+        src: require("./Pics/city.jpg"), className: "portfolio-item medium"
       },
       {
-        src: require("./Pics/d.jpeg"), className: "portfolio-item small"
+        src: require("./Pics/roses.jpg"), className: "portfolio-item small"
       },
       {
-        src: require("./Pics/e.jpeg"), className: "portfolio-item tall"
+        src: require("./Pics/street.jpg"), className: "portfolio-item tall"
       },
       {
-        src: require("./Pics/f.jpeg"), className: "portfolio-item wide"
+        src: require("./Pics/wave.jpeg"), className: "portfolio-item wide"
       }
     ], 
     picturePage: true,
