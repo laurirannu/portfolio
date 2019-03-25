@@ -18,3 +18,10 @@
     grid-column: 2 / span 3;
     font-size: 150%;
 }
+
+@media only screen and (max-width: 600px) {
+    .content {
+        grid-row: span 2;
+        grid-column: 1 / span 5;
+    }
+}
