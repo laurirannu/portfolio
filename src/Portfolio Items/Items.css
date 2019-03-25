@@ -57,3 +57,14 @@ img {
     opacity: 1;
     transform: scale(1.05, 1.05);
 }
+
+@media only screen and (max-width: 768px){
+    .portfolio {
+        display: block;
+        padding: 2% 5% 5% 5%;
+    }
+    
+    .portfolio-item {
+        margin: 1rem;
+    }
+}
